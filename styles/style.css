@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+:root{
+    --azulEscuro: #006CE3;
+    --azulClaro: #0583F2;
+    --preto: #000000;
+    --branco: #ffffff;
+    --vintage: #fdf9e1;
+    --cinza: #c3cef7;
+}
+
+
+body{
+    width: 97%;
+    
+    background-color: var(--vintage);
+}
+
+.back{
+    display: block;
+}
+
+.containerPai{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--branco);
+    max-width: 1440px;
+    height: 700px;
+    margin: auto;
+    margin-top: 5%;
+
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    
+}
+
+.containerBtn{
+    width: 50%;
+    border-radius: 40px 0px 0px 40px;
+    background-color: var(--azulEscuro);
+    
+}
+
+.containerBtnFilho{
+
+    height: 605px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    background-color: var(--cinza);
+
+    padding: 10px;
+    margin-top: -1px;
+    border-radius: 40px 0px 0px 0px;
+    border: 2px solid var(--preto);
+}
+
+.btn{
+    color: var(--preto);
+    text-decoration: none;
+    background-color: rgb(226, 238, 255);
+    padding: 15px;
+    width: 180px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 30px;
+    
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 8px;
+
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn:hover{
+    margin-right: 5px;
+    margin-top: 5px;
+    background-color: var(--cinza);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px;
+    border: 1.5px solid black;
+}
+
+.containerAnimation{
+    border-radius: 0px 40px 40px 0px;
+
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--branco);
+}
+
+.iconCaminhao{
+    width: 250px;
+    height: 250px;
+}
+
+.logo{
+    max-width: 1440px;
+    margin: auto;
+    text-align: end;
+
+}
+
+.logoClass{
+    padding: 10px;
+    width: 300px;
+}
+
+
+
+
+@media screen  and (max-width: 700px) {
+
+    .btn{
+        font-size: 1em;
+
+        width: 140px;
+    }
+
+
+    .iconCaminhao{
+        width: 100px;
+        height: 100px;
+    }
+
+    .logo{
+        top: 280px;
+    }
+
+    .logoClass{
+        width: 150px;
+    }
+}
+
+
