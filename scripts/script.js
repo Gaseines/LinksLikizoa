@@ -7,5 +7,5 @@ function carregamento(){
         load.style.display = 'none'
         tela.style.display = 'block'
         
-    }, 2000)
+    }, 500)
 }
