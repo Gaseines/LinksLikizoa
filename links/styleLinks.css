@@ -19,16 +19,31 @@ body{
 
 .back{
     width: 100%;
-    
+    display: flex;
     background-color: var(--azulClaro);
-    display: none;
     justify-content: center;
     align-items: center;
 }
 
 .iconVoltar{
     width: 100%;
-    margin-left: 50px;
+    height: 80px;
+}
+
+.voltar{
+    width: 80px;
+    padding-right: 40px;
+    transform: rotate(180deg);
+}
+
+.voltar:hover{
+    padding-right: 30px;
+
+    transition: all .5s;
+}
+
+.img_logo{
+    width: 200px;
 }
 
 .container{
@@ -81,9 +96,8 @@ img{
 }
 
 .link:hover{
-    
-    transform: scale(102%);
-    font-size: 1.2em;
+    background-color: #4caafc;
+    transition: all .5s;
 }
 
 hr{
